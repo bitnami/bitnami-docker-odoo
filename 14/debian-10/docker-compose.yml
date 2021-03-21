@@ -9,8 +9,8 @@ services:
   odoo:
     image: 'docker.io/bitnami/odoo:14-debian-10'
     ports:
-      - '80:8069'
-      - '443:8071'
+      - '8069:80'
+      - '8071:443'
     volumes:
       - 'odoo_data:/bitnami'
     depends_on:
